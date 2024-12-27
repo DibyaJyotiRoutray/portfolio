@@ -1,4 +1,4 @@
-@import "../../vars.css";
+/*@import "../../vars.css";
 
 .navbar {
   position: relative;
@@ -38,7 +38,7 @@
   text-decoration: none;
 }
 
-/*@media screen and (max-width: 830px) {
+@media screen and (max-width: 830px) {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
@@ -81,71 +81,95 @@
   }
 }
   */
- /* Responsive Styles */
-@media (max-width: 1024px) {
-  .navbar {
-    margin: 0 5%;
-  }
+  @import "../../vars.css";
 
-  .menuItems {
-    gap: 30px;
-  }
-
-  .menuItems a {
-    font-size: 20px;
-  }
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px; /* Reduced padding for better responsiveness */
+  padding-bottom: 10px; /* Additional padding for a balanced look */
+  z-index: 2;
+  margin: 0 5%; /* Adjusted for smaller screens */
 }
 
-@media (max-width: 768px) {
+.title {
+  font-size: 24px; /* Reduced font size for smaller screens */
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.menuBtn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+
+.menuBtn img {
+  width: 100%;
+  height: auto;
+}
+
+.menu {
+  display: flex;
+}
+
+.menuItems {
+  display: flex;
+  gap: 20px; /* Reduced gap for smaller screens */
+  list-style: none;
+}
+
+.menuItems a {
+  font-size: 18px; /* Adjusted font size for smaller screens */
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 830px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px; /* Reduced padding for smaller screens */
+  }
+
   .menu {
-    display: none; /* Hide menu by default for small screens */
+    position: absolute;
+    top: 100%; /* Position below the navbar title */
+    right: 5%; /* Align to the right */
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    z-index: 3;
   }
 
   .menuBtn {
-    display: block; /* Show the menu button (hamburger icon) */
-    font-size: 30px;
-    color: var(--color-text);
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-
-  .menu.active {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: var(--color-background);
-    padding: 20px;
+    display: block; /* Show the menu button for smaller screens */
   }
 
   .menuItems {
+    display: none; /* Hidden by default */
     flex-direction: column;
-    gap: 20px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 10px;
+    background: rgb(25, 55, 109);
+    background: linear-gradient(
+      0deg,
+      rgba(25, 55, 109, 0.2) 0%,
+      rgba(25, 55, 109, 1) 100%
+    );
+    padding: 20px; /* Adjusted padding */
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
   }
 
-  .menuItems a {
-    font-size: 22px;
-  }
-}
-
-@media (max-width: 480px) {
-  .navbar {
-    margin: 0 2%;
-  }
-
-  .title {
-    font-size: 24px;
-  }
-
-  .menuBtn {
-    font-size: 24px;
-  }
-
-  .menuItems a {
-    font-size: 18px;
+  .menuOpen {
+    display: flex;
+    z-index: 1;
   }
 }
-
