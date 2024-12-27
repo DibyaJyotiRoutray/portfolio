@@ -1,18 +1,18 @@
 [
     {
-      "title": "Project A",
+      "title": "Student Login Portal",
       "imageSrc": "projects/project.png",
-      "description": "This is a project made to learn the latest languages by building an app.",
+      "description": "This is an alumni management web application of IGIT MCA.",
       "skills": ["React", "Express", "Node"],
-      "demo": "https://www.example.com",
+      "demo": "https://igit-mca.vercel.app/",
       "source": "https://www.github.com"
     },
     {
-      "title": "Project B",
+      "title": "Google Gemini Clone",
       "imageSrc": "projects/project.png",
-      "description": "This is a project made to learn the latest languages by building an app.",
-      "skills": ["React", "Express", "Node", "Sass"],
-      "demo": "https://www.example.com",
-      "source": "https://www.github.com"
+      "description": "This is a React.js project. of Google gemini",
+      "skills": ["React", "CSS"],
+      "demo": "https://gemini-clone-ten-eta.vercel.app/",
+      "source": "https://github.com/DibyaJyotiRoutray/gemini-clone"
     }
   ]
