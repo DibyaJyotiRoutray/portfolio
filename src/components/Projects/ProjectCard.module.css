@@ -60,3 +60,70 @@
   background: var(--color-primary);
   padding: 1px 22px;
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 16px 20px;
+    max-width: 300px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .description {
+    font-size: 20px;
+  }
+
+  .skills {
+    gap: 4px;
+  }
+
+  .skill {
+    font-size: 20px;
+    padding: 2px 16px;
+  }
+
+  .link {
+    font-size: 25px;
+    padding: 1px 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 12px 16px;
+    max-width: 100%;
+  }
+
+  .title {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .description {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .skills {
+    justify-content: center;
+  }
+
+  .skill {
+    font-size: 18px;
+    padding: 2px 12px;
+  }
+
+  .links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .link {
+    font-size: 22px;
+    padding: 1px 16px;
+  }
+}
