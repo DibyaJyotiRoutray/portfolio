@@ -1,7 +1,7 @@
 [
     {
       "title": "Student Login Portal",
-      "imageSrc": "projects/project.png",
+      "imageSrc": "projects/student.png",
       "description": "This is an alumni management web application of IGIT MCA.",
       "skills": ["React", "Express", "Node"],
       "demo": "https://igit-mca.vercel.app/",
@@ -9,8 +9,8 @@
     },
     {
       "title": "Google Gemini Clone",
-      "imageSrc": "projects/project.png",
-      "description": "This is a React.js project. of Google gemini",
+      "imageSrc": "projects/gemini.png",
+      "description": "This is a React.js project of clone Google gemini clone which is also responsive and interactive",
       "skills": ["React", "CSS"],
       "demo": "https://gemini-clone-ten-eta.vercel.app/",
       "source": "https://github.com/DibyaJyotiRoutray/gemini-clone"
